@@ -1,0 +1,2 @@
+echo "🚦 PREPARE-COMMIT-MSG | 커밋 컨벤션 터미널을 시작합니다"
+exec < /dev/tty && npx cz --hook || true
