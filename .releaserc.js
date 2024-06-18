@@ -73,12 +73,12 @@ module.exports = {
         }
       },
     ],
-    [
-      "@semantic-release/npm",
-      {
-        "npmPublish": false
-      }
-    ],
+    // [
+    //   "@semantic-release/npm",
+    //   {
+    //     "npmPublish": false
+    //   }
+    // ],
     [
       "@semantic-release/changelog",
       {
@@ -89,7 +89,7 @@ module.exports = {
     [
       "@semantic-release/git",
       {
-        "assets": ["CHANGELOG.md", "package.json"]
+        "assets": ["CHANGELOG.md"]
       }
     ]
   ],
