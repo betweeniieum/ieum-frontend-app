@@ -19,6 +19,9 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+        
+      - name: Disable Husky
+        run: npx husky disable
 
       - name: Semantic Release
         env:
