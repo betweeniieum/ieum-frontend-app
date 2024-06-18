@@ -2,6 +2,7 @@ module.exports = {
   "branches": [
     "main"
   ],
+  "repositoryUrl": "https://github.com/betweeniieum/ieum-frontend-app",
   "plugins": [
     [
       "@semantic-release/commit-analyzer",
