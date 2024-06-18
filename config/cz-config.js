@@ -13,7 +13,8 @@ module.exports = {
     { value: 'revert', name: 'revert | 이전의 코드로 되돌려요.' },
     { value: 'move', name: 'move | 디렉토리, 파일이나 코드를 새로운 위치로 이동시켜요.' },
     { value: 'remove', name: 'revert | 쓸모없는 디렉토리, 파일이나 코드를 삭제해요.' },
-    { value: 'ci', name: 'ci | CI를 업데이트해요.' }
+    { value: 'ci', name: 'ci | CI를 업데이트해요.' },
+    { value: 'deploy', name: 'deploy | 서비스를 배포해요.' }
   ],
   scopes: [
     'component',
