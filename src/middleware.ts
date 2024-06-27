@@ -1,8 +1,7 @@
 /**
- * !!주의 미들웨어는 기본적으로 edge사이드 렌더링이 적용되어 있어 firebase-admin이 동작을 못함.
+ * !!주의 미들웨어는 기본적으로 Edge 사이드 렌더링이 적용되어 있어 firebase-admin이 동작을 못함.
  * 이에 따라 API 라우트를 이용해 우회에서 firebase-admin을 사용할 수 있다.
  */
-
 import { NextResponse, NextRequest } from 'next/server';
 
 export async function middleware(req: NextRequest) {
@@ -28,7 +27,7 @@ export async function middleware(req: NextRequest) {
   return NextResponse.next();
 }
 
-// 미들웨어를 적용할 경로를 설정합니다.
+// 미들웨어를 적용할 경로를 설정합니다. my, join 페이지 둘다
 export const config = {
-  matcher: ['/my/:path*']
+  matcher: ['/my/:path*', '/join/:path*']
 };

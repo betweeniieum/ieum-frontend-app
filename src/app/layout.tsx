@@ -4,7 +4,7 @@
 import type { Metadata } from 'next';
 import '@app/globals.css';
 import '@app/reset.css';
-import StyledComponentsRegistry from '@components/lib/registry';
+import StyledComponentsRegistry from '@lib/styledComponents/registry';
 import { FirebaseProvider } from '@components/provider/FirebaseProvider';
 import { FirebaseOptions } from 'firebase/app';
 

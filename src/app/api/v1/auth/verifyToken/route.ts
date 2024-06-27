@@ -1,5 +1,5 @@
 import { type NextRequest } from 'next/server';
-import { firebaseAuth } from '@components/lib/firebase/server';
+import { firebaseAuth } from '@lib/firebase/server';
 
 export async function POST(req: NextRequest) {
   const token = req.headers.get('authorization')?.split('Bearer ')[1];
